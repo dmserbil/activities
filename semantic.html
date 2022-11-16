@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        header {
+            background: rgb(93, 93, 201);
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            background-size: 700px;
+            color: white;
+
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 355px;
+            background-color: rgb(158, 179, 199);
+            font-size: 20px;
+            margin-top: 3px;
+            
+        }
+        nav ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+       main {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(104, 164, 199);
+       }
+
+       main article {
+        background-color: rgb(90, 188, 218);
+        text-align: center;
+        margin-left: 30%;
+        
+    
+       }
+
+       footer {
+        background-color: rgb(35, 40, 82);
+        padding: 10px;
+        text-align: center;
+        color: white;
+
+       }
+
+       @media (max-width: 600px) {
+        nav,article {
+            width: 100%;
+            height: auto;
+        }
+       }
+
+       @media (max-width: 400px) {
+        article {
+            width: 50%;
+            height: auto;
+            margin-top: 40%;
+        }
+       }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>KodeGo Courses</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li> <a href="#">Full-Stack Web Dev</a> </li>
+                <li> <a href="#">Mobile App Dev</a> </li>
+                <li> <a href="#">UX Design</a> </li>
+            </ul>
+        </nav>
+
+    <main>
+    
+    <article class="article">
+        <h2>Full-Stack Web Dev</h2>
+        <p>Full stack developers straddle two separate web development domains: the front end and the back end.</p>
+    </article>
+
+    <article>
+        <h2>Mobile App Dev</h2>
+        <p>A mobile app developer uses programming languages and development skills to create, test, and develop applications on mobile devices.</p>
+    </article>
+
+    <article>
+        <h2>UX Design</h2>
+        <p>User experience design is the process of defining the experience a user would go through when interacting with a digital product or website.</p>
+    </article>
+
+    </main>
+
+</section>
+<footer>
+    <p>Copyright.</p>
+</footer>
+    
+</body>
+</html>
